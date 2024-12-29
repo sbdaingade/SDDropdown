@@ -43,13 +43,15 @@ struct SDDropDownView: View {
                                     Image(systemName: "checkmark")
                                         .padding(.horizontal, -40)
                                     Spacer()
-                                }
+                                }.padding(10)
                             }
                         } // ZStack
                         .frame(maxWidth: .infinity)
                         .onTapGesture {
+                            debugPrint("\(list[index])")
                             action?(list[index])
                             isPicking = false
+                            selectedValue = list[index]
                         }
                     }
                 }

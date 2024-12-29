@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SDDropdownApp: App {
+    @State var isPicking: Bool = false
+    @State var selectedValue: String = ""
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(isPicking: $isPicking, selectedValue: $selectedValue)
         }
     }
 }
