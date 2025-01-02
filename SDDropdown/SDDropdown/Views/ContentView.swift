@@ -23,7 +23,7 @@ struct ContentView: View {
                 }
                 
             }
-            .frame(height: 50)
+            .frame(width: 200, height: 50)
             .background(Color.brown)
             .clipShape(.capsule(style: .circular))
             .padding()

@@ -34,16 +34,16 @@ struct SDDropDownView: View {
                             HStack {
                                 VStack {
                                     Text("\(list[index])")
+                                        .font(.title3)
                                 }
                             } // HStack
                             
                             if list[index] == selectedValue {
                                 HStack {
-                                    Spacer()
                                     Image(systemName: "checkmark")
-                                        .padding(.horizontal, -40)
+                                        .padding(.leading, 40)
                                     Spacer()
-                                }.padding(10)
+                                }
                             }
                         } // ZStack
                         .frame(maxWidth: .infinity)
