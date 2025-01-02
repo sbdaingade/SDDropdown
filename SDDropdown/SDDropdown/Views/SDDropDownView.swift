@@ -25,6 +25,7 @@ struct SDDropDownView: View {
     var body: some View {
         VStack(spacing: 16) {
             Text("\(type.setDropdownTitle())")
+                .font(.headline)
                 .padding(10)
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible())]) {
